@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background: #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: url("Background-Logo.jfif");
+  column-count: 3;
+}
+  .Logo{
+  	width:250px;
+  	height: 150px;
+  	border-radius: 30px;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+  }
+
+.header h1 {
+  font-size: 30px;
+  margin: auto;
+  margin-bottom: 45px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  margin-left: 5cm;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+    display: inline-block;
+
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background: #ddd;
+  margin-bottom:20px; 
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  .card{
+  	display:block;
+  }
+  .text{
+  	width:100%;
+  }
+  .ingénieur{
+  	width: 100%;
+  }
+  .ingénieur2{
+  	width:100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  .card{
+  	display:block;
+  }
+  .text{
+  	width:100%;
+  }
+  .ingénieur{
+  	width: 100%;
+  }
+  .ingénieur2{
+  	width:100%;
+  	float
+  }
+}
+
+.link-sc{
+	justify-content: center;
+}
+
+.Home{
+	height: 30px;
+	width: 30px;
+	margin: 0;
+}
+
+.image{
+	width: 500px;
+	height: 300px;
+}
+
+.text_liens{
+	margin-left: 3cm;
+}
+.liens{
+	text-decoration: none;
+}
